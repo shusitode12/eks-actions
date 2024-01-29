@@ -16,7 +16,11 @@ terraform {
     }
   }
 
-backend "s3" {}
+backend "s3" {
+  bucket = "github-actions-terraform-aws-tfstates"
+  key    = "infra.tfstate"
+  region = "us-east-1"
+}
 }
 
 /*
