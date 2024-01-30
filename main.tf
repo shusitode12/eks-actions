@@ -1,4 +1,4 @@
-####### root/main.tf
+######## root/main.tf
 /*
 module "eks" {
   source                  = "./modules/eks"
